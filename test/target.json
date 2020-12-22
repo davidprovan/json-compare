@@ -1,0 +1,6 @@
+{
+    "test" : "Hello",
+    "deep": {
+        "clone" : "Hello"
+    }
+}
