@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/davidprovan/json-compare#readme",
   "dependencies": {
+    "lodash.merge": "^4.6.2",
     "yargs": "^16.2.0"
   }
 }
