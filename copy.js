@@ -17,13 +17,3 @@ if (argv.sourceFile && argv.targetFile && argv.outputFile) {
 } else {
     console.log('Run the command as ./copy.js --sourceFile newTranslations.json --targetFile existingTranslations.json --outputFile result.json');
 }
-
-function copyData (obj, currentParent, parse) {
-    for (var k in obj) {
-      if (typeof obj[k] === 'object' && obj[k] !== null) {
-        parseObjectProperties(obj[k], `${currentParent}${k}.`, parse)
-      } else if (obj.hasOwnProperty(k)) {
-        parse(currentParent + k)
-      }
-    }
-  }
