@@ -11,7 +11,7 @@ if (argv.sourceFile && argv.targetFile && argv.outputFile) {
 
     merge(target, source);
 
-   fs.writeFileSync(argv.outputFile, JSON.stringify(target, null, 2))
+   fs.writeFileSync(argv.outputFile, JSON.stringify(target, null, 2).replace("•", "\u2022"));
    console.log('[COMPLETED}\n');
 
 } else {
